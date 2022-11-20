@@ -1,0 +1,193 @@
+body{
+    background: #fffff8;
+    font-family: -apple-system, BlinkMacSystemFont, serif;
+    padding: 1rem;
+    background-image: linear-gradient(90deg, #d3cffa, #fcfbfd);
+    background: no-repeat url("image-from-rawpixel-id-6104676-jpeg.jpg");
+    background-size: cover;
+    /*Image by rawpixel.com*/
+}
+
+#app{
+    display: grid;
+    grid-auto-rows: minmax(min-content, auto);
+    height:100vh;
+    min-height: 100vh;
+    color: #483674;
+    grid-template-columns: 90vw;
+    justify-content: center;
+    grid-gap: 1em;
+    font-size: 2vmax;    
+    font-family: serif;
+    border-radius:0.5rem;
+    cursor: context-menu;
+    padding: 1rem;
+}
+
+.holder{
+    
+    border-radius:0.5em;
+    align-self: center;
+}
+
+.entry{
+    height: min-content;
+    display: grid;
+    grid-auto-rows: minmax(min-content, auto);
+}
+
+#entryHolder{
+    background:#79a7d3d1;
+    display: grid;
+    grid-auto-rows: minmax(5vh, auto);
+    grid-template-areas:"city date temp content";
+    text-align: center;
+    border-radius:0.2rem;
+    padding: 0.5em;
+
+}
+
+.headline {
+font: 5vmax Blippo, Fantasy;
+line-height: 140%;
+text-shadow: 1rem 1rem 1.5rem #fbfafc;
+
+color: #8a307f;
+
+}
+.title{
+    padding-left: 1rem;
+    height:min-content;
+    font-weight:bold;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    grid-area:lab;
+    display:block;
+    font-size: 1em;
+    font-weight:bold;
+    padding-left: 1rem;
+}
+
+input{
+    display:block;
+    width: 23ch;
+    background: #79a7d3d1;
+    color: #7A2048;
+    font-size: 1em;
+    font-family: 'Oswald', serif;
+    border: none;
+    border-radius:0.5rem;
+    padding: 1rem;
+}
+#other{
+    display:none;
+}
+#otherCountries{
+    display:inline;
+    height: 1rem;
+    width: 1rem;
+    background: #79a7d3d1;
+    color: #7A2048;
+    font-size: 1em;
+    font-family: 'Oswald', serif;
+    border: none;
+    border-radius:0.5rem;
+}
+.feel{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "lab ."
+    "txt ."
+    "txt bt";
+}
+button{
+    width: 30vw;
+    height: 50px; 
+    background: #6883bc;
+    color: #ebe8f7;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Oswald', serif;
+    border: none;
+    box-shadow: 2px 4px 5px #483674;
+    border-radius:0.5rem;
+    align-self: end;
+    right: 5%;
+    cursor: pointer;
+}
+select{
+    display: block;
+    width: 25ch;
+    font-size: 1rem;
+}
+#generate{
+    grid-area:bt;
+    width: 40vw;
+    height: 100px;
+    background: #6883bc;
+    color: #ebe8f7;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Oswald', serif;
+    border: none;
+    box-shadow: 2px 4px 5px #483674;
+    border-radius:0.5rem;
+    align-self: end;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+}
+h1{
+    font-size: 36px;
+}
+
+#city{
+    background-color: #d3cffa;
+}
+#date{
+    background-color: #d3cffa;
+}
+#temp{
+    background-color:#e8f0fe;
+}
+#content{
+    background-color:#e8f0fe;
+}
+textarea{
+    grid-area:txt;
+    background:#79a7d3d1;
+    color: #000000;
+    font-size: 1em;
+    font-family: 'Oswald', serif;
+    border-radius:0.5rem;
+    border-width: 0.2rem;
+    border-style: ridge;
+    border-color:#6883bc;
+    padding: 1rem;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #7A2048;
+    font-family: 'Oswald', serif;
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #7A2048;
+    font-family: 'Oswald', serif;
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #7A2048;
+    font-family: 'Oswald', serif;
+} 

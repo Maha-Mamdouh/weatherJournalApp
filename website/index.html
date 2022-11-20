@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weather Journal</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+ <body>
+<div id = "app">
+  <div class ="holder headline">
+    Weather Journal App
+  </div>
+  <div class="zipOrcountry">  
+    <div class ="holder zip" id="USA">
+      <label for="zip">Zipcode (USA only)</label>
+      <input type="text" id="zip" placeholder="Enter zip code here:(e.g. 94040)">
+    </div>
+  </div>
+  <div>
+    <label for="otherCountries" >Other countries
+      <input type="checkbox" id="otherCountries" onclick="showHide()"> 
+    </label>
+    
+  </div>
+
+  <div class =" code" id="other"  >
+    <label for="countryList">country code</label>
+    <select name ="countryList" id="countryList"><option value="">--Please choose an country--</option></select>
+    <label for="cityList">City name</label>
+    <select name ="cityList" id="cityList"><option value="">--Please choose a city--</option></select>
+  </div>
+  <div class ="holder feel">
+    <label for="feelings">How are you feeling today?</label>
+    <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="5" cols="50"></textarea>
+    <button id="generate" type = "submit"> Generate </button>
+  </div>
+  <div class ="holder entry">
+    <div class = "title">Most Recent Entry</div>
+    <div id = "entryHolder">
+      <div><strong>City Name</strong><div id = "city"></div></div>
+      <div><strong>Temperature</strong><div id = "temp"></div></div>
+      <div><strong>Date</strong><div id = "date"></div> </div>
+      <div><strong>User input</strong><div id = "content"></div></div>
+    </div>
+  </div>
+</div>
+<script src="app.js" type="text/javascript"></script>
+</body>
+</html>
